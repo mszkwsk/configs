@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+	name = mszkwsk
+[core]
+	editor = vim
+[alias]
+	co = checkout
+	aa = add --all
+	cm = commit -m
+	yolo = push --force-with-lease
+	p = push
