@@ -1,0 +1,8 @@
+# Git prompt
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWCOLORHINTS=true
+source ~/.git-prompt.sh
+# Display hour in yellow, user in white, current directory with cyan, command in white
+setopt PROMPT_SUBST ; PS1='%F{yellow}{%T}%F{white}%n@%F{cyan}%~($(__git_ps1 "%s")%F{cyan})%f '
+#PROMPT="%F{yellow}{%T}%F{white}%n@%F{cyan}%~%f "
